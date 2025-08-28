@@ -17,7 +17,3 @@ def test_text_to_duration_float():
 def test_text_to_duration_irrational():
     assert abs(text_to_duration("10:20") - 10.33333) < 1e-5 # way to get around evaluating irrational numbers
     #assert text_to_duration("10:20") == 10 + 1/3 # alternate suggestion
-
-test_text_to_duration_integer()
-test_text_to_duration_float()
-text_text_to_duration_irrational()
